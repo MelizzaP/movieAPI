@@ -1,7 +1,7 @@
-<h1><%=@title%>'s Actors</h1>
+<h1><%=@movie['title']%>'s Actors</h1>
 
  <% @actors.each do |actor| %>
-  <li><a href='/actors/<%=actor["id"]%>'><%= actor["name"]%></a></li>
+  <p><a href='/actors/<%=actor["id"]%>'><%= actor["name"]%></a></p>
 <%end%>
 
 

@@ -24,15 +24,14 @@ end
 
 get '/movies/:id' do
   @actors = JSON.parse(RestClient.get "http://movies.api.mks.io/movies/#{params[:id]}/actors")
-  @title = params[:title]
+  @movie = JSON.parse(RestClient.get "http://movies.api.mks.io/movies/#{params[:id]}")
   erb :'movies/movie_shell'
 end
 
 get '/actors/:id' do
   @movies = JSON.parse(RestClient.get "http://movies.api.mks.io/actors/#{params[:id]}/movies")
-  @name = params[:name]
+  @actor = JSON.parse(RestClient.get "http://movies.api.mks.io/actors/#{params[:id]}")
   erb :'actors/actor_shell'
 end 
 
-# this will be refactored and added to lib 
-# later
+

@@ -1,5 +1,5 @@
-<h1><%=@name%>'s Movies</h1>
+<h1><%=@actor['name']%>'s Movies</h1>
 
  <% @movies.each do |movie| %>
-  <li><a href='/movies/<%=movie["id"]%>'><%= movie["title"]%></a></li>
+  <p><a href='/movies/<%=movie["id"]%>'><%= movie["title"]%></a><p>
 <%end%>
