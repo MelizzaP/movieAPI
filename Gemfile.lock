@@ -4,7 +4,6 @@ GEM
     backports (3.6.4)
     multi_json (1.10.1)
     netrc (0.7.9)
-    pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -31,7 +30,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pg
   rest_client
   sinatra
   sinatra-reloader
