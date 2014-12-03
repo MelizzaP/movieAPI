@@ -1,3 +1,6 @@
 source "https://rubygems.org"
 
 gem "sinatra"
+gem 'rest_client'
+gem 'sinatra-reloader'
+gem 'pg'
